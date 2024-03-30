@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+	font-family: "Poppin", sans-serif;
+	background-color: #ffffff;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.top-bar {
+    background-color: #4b3d0e;
+    height: 50px;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.container {
+	position: relative;
+	width: 950px;
+	max-width: 100%;
+}
+
+.book {
+	width: 950px;
+	height: 1050px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500;
+}
+
+input {
+	display: none;
+}
+
+.cover, .back-cover {
+	background-color: #241e03;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+	box-shadow: 0 0 5px rgb(25, 47, 88);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cover {
+	position: absolute;
+	z-index: 4;
+	transform-origin: center left;
+	transition: transform 1s;
+}
+
+.square {
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+.name-container {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.first-name {
+    color: white;
+    font-size: 45px;
+	font-family: 'Cinzel', serif;
+    font-weight: bold;
+
+}
+
+.last-name {
+    color: white;
+    font-size: 45px;
+	font-family: 'Cinzel', serif;
+    font-weight: bold;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+}
+
+.cover label {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.back-cover {
+	position: relative;
+	z-index: -1;
+}
+
+.page {
+	position: absolute;
+	background-color: white;
+	width: 930px;
+	height: 1030px;
+	border-radius: 15px 0 0 15px;
+	margin-top: 10px;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition-duration: 1.5s;
+}
+
+.page img {
+	width: 100%;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+}
+
+.front-page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+.back-page {
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	z-index: 99;
+}
+
+.next, .prev {
+	position: absolute;
+	bottom: 1em;
+	cursor: pointer;
+}
+
+.next {
+	right: 1em;
+}
+
+.prev {
+	left: 1em;
+}
+
+#page1 {
+	z-index: 3;
+}
+
+#page2 {
+	z-index: 2;
+}
+
+#page3 {
+	z-index: 1;
+}
+
+#checkbox-square {
+	display: none;
+}
+
+#checkbox-cover:checked ~ .book {
+	transform: translate(200px);
+}
+
+#checkbox-cover:checked ~ .book .cover {
+	transition: transform 1.5s, z-index 0.5s 0.5s;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+
+#checkbox-cover:checked ~ .book .page {
+	box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+
+#checkbox-page1:checked ~ .book #page1 {
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+
+#checkbox-page2:checked ~ .book #page2 {
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+	left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    z-index: 999;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer a {
+	display: inline-block;
+	margin: 0 5px;
+  }
+  
+.footer a i {
+	font-size: 36px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.footer a:hover i {
+	background-color: transparent;
+	color: #241e03;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	transition-delay: 0s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 1200px !important;
+    }
+
+    .book {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+	.coyright_text {
+		font-size: 36px;
+	}
+
+    .social-media-icons a i {
+        font-size: 24px;
+		color: white;
+		border: 1px solid white;
+		border-radius: 50%;
+		padding: 5px;
+		margin: 0 5px;
+		transition: transform 0.3s;
+    }
+
+	.social-media-icons a i {
+		transform: scale(1.2);
+	}
+
+    .copyright-text {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book {
+        width: 95%;
+        max-width: 100%;
+    }
+}

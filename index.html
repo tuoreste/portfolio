@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flip_me</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="content/style_c.css">
+	<script
+		src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous">
+	</script>
+	<script
+		src="script.js">
+	</script>
+</head>
+<body>
+	<div class="top-bar"></div>
+	<div class="container">
+		<input type="checkbox" id="checkbox-cover" class="checkbox-cover">
+		<input type="checkbox" id="checkbox-page1" class="checkbox-page">
+		<input type="checkbox" id="checkbox-page2" class="checkbox-page">
+		<input type="checkbox" id="checkbox-page3" class="checkbox-page">
+		<div class="book">
+			<div class="cover">
+				<input type="checkbox" id="checkbox-square">
+				<label class="square" for="checkbox-cover"></label>
+				<div class="name-container">
+					<span class="first-name">Oreste</span>
+					<span class="last-name">Tuyishimire</span>
+				</div>
+			</div>
+			<div class="page" id="page1">
+				<div class="front-page">
+					<div class="personal-details">
+						<div class="profile-picture">
+							<img src="your-profile-picture.jpg" alt="Profile Picture" width="200" height="200">
+						</div>
+						<div class="details">
+							<h2>About</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id fermentum ex. Nullam quis ex nec neque tincidunt laoreet. Nam pretium ipsum non elit fermentum, sed vestibulum leo maximus.</p>
+							<p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+							<p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedinprofile">Your LinkedIn Profile</a></p>
+						</div>
+					</div>
+					<label
+						class="next"
+						for="checkbox-page1">
+							<i class="fas fa-chevron-right"></i>
+					</label>
+				</div>
+				<div class="back-page">
+					<img src="images/1.png">
+					<label
+						class="prev"
+						for="checkbox-page1">
+							<i class="fas fa-chevron-left"></i>
+					</label>
+				</div>
+			</div>
+			<div class="page" id="page2">
+				<div class="front-page">
+					<h2>Page 2</h2>
+					<p>
+						Lorem2 ipsum dolor sit amet consectetur, adipisicing elit. 
+						Repellat alias recusandae voluptate nulla aspernatur
+						in vero ipsa veritatis tempora excepturi ad sequi illo,
+						esse sunt aliquid repellendus illum necessitatibus nostrum!
+					</p>
+					<label
+						class="next"
+						for="checkbox-page2">
+							<i class="fas fa-chevron-right"></i>
+					</label>
+				</div>
+				<div class="back-page">
+					<img src="images/2.png">
+					<label
+						class="prev"
+						for="checkbox-page2">
+							<i class="fas fa-chevron-left"></i>
+					</label>
+				</div>
+			</div>
+			<div class="page" id="page3">
+				<div class="front-page">
+					<h2>Page 3</h2>
+					<p>
+						Lorem3 ipsum dolor sit amet consectetur, adipisicing elit. 
+						Repellat alias recusandae voluptate nulla aspernatur
+						in vero ipsa veritatis tempora excepturi ad sequi illo,
+						esse sunt aliquid repellendus illum necessitatibus nostrum!
+					</p>
+				</div>
+			</div>
+			<div class="back-cover"></div>
+		</div>
+		<footer class="footer" style="background-color: #241e03; color: white;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="coyright_text">&copy; 2024 Orestus. All rights reserved. </p>
+					</div>
+					<div class="col-md-6 text-center">
+						<div class="social-media-icons" >
+							<a href="#" title="My GitHub">
+								<i class="fab fa-github" style="font-size: 36px; color: white;"></i>
+							</a>
+							<a href="#" title="My linkedin">
+								<i class="fab fa-linkedin" style="font-size: 36px; color: white;"></i>
+							</a>
+							<a href="#" title="My instagram">
+								<i class="fab fa-instagram" style="font-size: 36px; color: white;"></i>
+							</a>
+							<a href="#" title="My X😂">
+								<i class="fa-brands fa-x-twitter" style="font-size: 36px; color: white;"></i>
+							</a>
+							<a href="#" title="My envelope">
+								<i class="far fa-envelope" style="font-size: 36px; color: white;"></i>
+							</a>
+							<a href="#" title="My facebook">
+								<i class="fab fa-facebook" style="font-size: 36px; color: white;"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.personal-details {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profile-picture {
+    margin-bottom: 10px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.details {
+    font-size: 18px;
+}
+
+.details h2 {
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details a {
+    color: blue;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
