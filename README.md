@@ -54,6 +54,6 @@ Welcome to my portfolio! Here you'll find a collection of projects I'm currently
 - **Status:** This project is currently in progress.
 
 ## How to Run the Projects
-- Provide instructions on how to clone and run each project locally once they are completed.
+- Please follow instructions in specific readme of the corresponding repository.
 
 Feel free to reach out to me if you have any questions or would like to collaborate on a project!
