@@ -5,6 +5,13 @@ Welcome to my portfolio! Here you'll find a collection of projects I'm currently
 
 ## Projects
 
+## Introduction Video
+
+<video width="320" height="240" controls>
+  <source src="URL_TO_YOUR_VIDEO_FILE.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ### Project 1: libft
 - **Description:** libft is a simple library of C functions created as part of the 42 school curriculum. It includes functions for memory manipulation, string manipulation, linked list manipulation, and more.
 - **Status:** Completed
