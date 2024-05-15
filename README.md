@@ -13,11 +13,11 @@ Welcome to my portfolio! Here you'll find a collection of projects I'm currently
 - **Description:** get_next_line is a function that reads a line from a file descriptor. It is useful for parsing files line by line, especially when dealing with large files or streams of data.
 - **Status:** Completed
 
-### Project 3: ft_printf (In Progress)
+### Project 3: ft_printf
 - **Description:** ft_printf is an implementation of the printf function in C. It allows for formatted output to the console or other output streams, supporting various format specifiers and modifiers.
 - **Status:** Completed
 
-### Project 4: Born2beroot (In Progress)
+### Project 4: Born2beroot
 - **Description:** Born2beroot is a project focused on setting up and configuring a virtual machine according to specific requirements. It involves tasks such as installing and configuring software, setting up users and permissions, and securing the system.
 - **Status:** Completed
 
