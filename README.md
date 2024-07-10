@@ -1,5 +1,5 @@
 # portfolio
-My own portfolio (to be launched in june)
+My own portfolio (to be launched in August)
 
 Welcome to my portfolio! Here you'll find a collection of projects I'm currently working on, showcasing my skills and experience as a software developer.
 
