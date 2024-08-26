@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Flip_me</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="content/style_c.css">
-	<script
-		src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous">
-	</script>
-	<script
-		src="script.js">
-	</script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Flip_me</title>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="content/style_c.css">
+
+		<script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+
+		<style>
+			.circle {
+				position: relative;
+				margin-top: 2%;
+				margin-left: 5%;
+				border: 2px solid #f0f0f0;
+				width: 500px;
+				height: 500px;
+				border-radius: 50%;
+				display: flex;
+				/* justify-content: center; */
+				/* align-items: center; */
+				background-color: #f0f0f0;
+			}
+
+			.libicon {
+				position: absolute;
+				border: 2px solid #f0f0f0;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				display: flex;
+				/* justify-content: center; */
+				/* align-items: center; */
+				background-color: #f0f0f0;
+			}
+
+			.word {
+				position: absolute;
+				font-size: 16px;
+				color: #333;
+				border: #f0f0f0;
+				white-space: nowrap;
+				transition: transform 0.3s ease;
+				/* transform-origin: center; */
+			}
+		</style>
+
+		<script src="script.js"></script>
+	</head>
 <body>
 	<div class="top-bar"></div>
-	<div class="container">
+	<div class="container custom-font" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
 		<input type="checkbox" id="checkbox-cover" class="checkbox-cover">
 		<input type="checkbox" id="checkbox-page1" class="checkbox-page">
 		<input type="checkbox" id="checkbox-page2" class="checkbox-page">
 		<input type="checkbox" id="checkbox-page3" class="checkbox-page">
-		<div class="book">
+		<div class="book" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">
 			<div class="cover">
 				<input type="checkbox" id="checkbox-square">
 				<label class="square" for="checkbox-cover"></label>
 				<div class="name-container">
-					<span class="first-name">Oreste</span>
-					<span class="last-name">Tuyishimire</span>
+					<span class="first-name">Hello ! </span>
 				</div>
 			</div>
 			<div class="page" id="page1">
-				<div class="front-page">
-					<div class="personal-details">
-						<div class="profile-picture">
-							<img src="your-profile-picture.jpg" alt="Profile Picture" width="200" height="200">
+				<div class="front-page d-flex justify-content-center align-items-center">
+					<div class="no-border-card shadow-lg p-3 mb-5 bg-body-tertiary rounded w-95 p-3 h-75 p-3 d-inline-block" style="width: 850px;">
+						<div class="fs-1 custom-margin-top custom-font-size" style="margin-top: 5%;">
+							<div class="d-flex align-items-center" style="margin-left: 2%;">
+								<img src="images/pp1.jpg" alt="PP" class="rounded-circle profile-picture" style="width: 100px; height: 100px; object-fit: cover;">
+								<p class="fw-bold mb-0 ml-4" style="font-size: 4rem !important;" > Oreste Tuyishimire</p>
+							</div>
+							<p style="margin-left: 16.5%; font-size: 2rem !important; margin-top: -27px; font-style: italic;">Software Developer</p>
+							<div style="margin-left: 8%; margin-top: 5%;">
+								<span>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi I'm Oreste, a backend developer who have
+									no idea why the earth rotates! why though? should it? anyways, WELCOME to my 
+									portfolio.<br><br>
+									A simple book of my professional life.<br><br>
+								</span>
+							</div>
+							<div style="margin-left: 50%;">
+								Content:
+								<div style="margin-left: 10%;">
+									<li> 
+										<a href="#">Profile</a>
+									</li>
+									<li>
+										<a href="#">Projects</a>
+									</li>
+									<li>
+										<a href="#">Gallery</a>	
+									</li>
+								</div>
+								
+							</div>
 						</div>
-						<div class="details">
-							<h2>About</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id fermentum ex. Nullam quis ex nec neque tincidunt laoreet. Nam pretium ipsum non elit fermentum, sed vestibulum leo maximus.</p>
-							<p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-							<p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedinprofile">Your LinkedIn Profile</a></p>
-						</div>
+						<img src="images/8.png" alt="PT" class="" style="width: 200px; height: auto; margin-top: 3%; margin-left: 5%;">
 					</div>
 					<label
 						class="next"
@@ -61,13 +124,37 @@
 			</div>
 			<div class="page" id="page2">
 				<div class="front-page">
-					<h2>Page 2</h2>
-					<p>
-						Lorem2 ipsum dolor sit amet consectetur, adipisicing elit. 
-						Repellat alias recusandae voluptate nulla aspernatur
-						in vero ipsa veritatis tempora excepturi ad sequi illo,
-						esse sunt aliquid repellendus illum necessitatibus nostrum!
-					</p>
+					<div class="flex-container" style="font-size: 1.75rem; display: flex; justify-content: space-between; align-items: center; position: relative;">
+						<a class="p-2" href="#">
+							<img src="images/8.png" alt="PT" class="" style="width: 50px; height: auto; margin-top: 3%; margin-left: 1%;">
+						</a>
+						<a  href="#" class="centered-item"  style="text-align: center; font-weight: bolder; margin-top: 3%; position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+							<p>PrOjEcTs</p>
+						</a>
+						<a class="ml-auto p-2" href="#" style="font-weight: bolder; margin-right: 2%; margin-top: 3%;">
+							<p>Gallery</p>
+						</a>
+					</div>
+					<div style="border-top: 2px solid black; width: 100%; margin-top: -1px;">
+						<div style="margin-left: 3%; margin-top: 6%; margin-right: 3%; padding: 0 3%; max-width: 800px; text-align: justify;">
+							<div>
+								<a href="https://github.com/tuoreste/Libft"> Libft</a>
+								<p id="text">
+									Libft is a personal 42 library project where students create their own implementations of standard C library functions.
+									<span id="dots" style="cursor:pointer; display: inline; color: rgb(38, 81, 81);" onclick="toggleText()">...</span>
+									<span id="more" style="display:none; cursor: pointer;">
+										The goal is to deepen understanding of fundamental programming concepts such as memory management. 
+										string manipulation, and data structures. By building libft, students practice writing and testing low-level functions,
+										which are often used as building blocks for more complex projects throughout the 42 curriculum.
+										<a href="https://github.com/tuoreste/Libft" class="circle shadow-lg" id="circle" >
+											<img class="libicon" src="images/libIcon.png" alt="lib">
+											<span>C functions library</span>
+										</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
 					<label
 						class="next"
 						for="checkbox-page2">
@@ -129,5 +216,9 @@
 		</footer>
 	</div>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

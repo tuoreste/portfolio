@@ -11,9 +11,9 @@ body {
 }
 
 .top-bar {
-    background-color: #4b3d0e;
-    height: 50px;
-    width: 100%;
+	background-color: #4b3d0e;
+	height: 50px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -60,34 +60,34 @@ input {
 	border: 2px solid white;
 	box-sizing: border-box;
 	border-radius: 0 15px 15px 0;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .name-container {
-    position: absolute;
-    top: 70%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+	position: absolute;
+	top: 70%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .first-name {
-    color: white;
-    font-size: 45px;
+	color: white;
+	font-size: 45px;
 	font-family: 'Cinzel', serif;
-    font-weight: bold;
+	font-weight: bold;
 
 }
 
 .last-name {
-    color: white;
-    font-size: 45px;
+	color: white;
+	font-size: 45px;
 	font-family: 'Cinzel', serif;
-    font-weight: bold;
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 0;
-    width: 100%;
+	font-weight: bold;
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	width: 100%;
 }
 
 .cover label {
@@ -193,27 +193,36 @@ input {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+	position: fixed;
+	bottom: 0;
 	left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    padding: 10;
+	width: 100%;
+	background-color: #f8f9fa;
+	padding: 10;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    z-index: 999;
+	z-index: 999;
+}
+
+.word {
+	position: absolute;
+	font-size: 16px;
+	color: #333;
+	white-space: nowrap;
+	transition: transform 0.3s ease;
+	border: 1px solid red;
 }
 
 .footer {
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 .footer a {
 	display: inline-block;
 	margin: 0 5px;
-  }
-  
+}
+
 .footer a i {
 	font-size: 36px;
 	color: white;
@@ -254,46 +263,46 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 1200px !important;
-    }
+	.container {
+		width: 1200px !important;
+	}
 
-    .book {
-        width: 90%;
-        max-width: 100%;
-    }
+	.book {
+		width: 90%;
+		max-width: 100%;
+	}
 
-    .footer-content {
-        flex-direction: column;
-    }
+	.footer-content {
+		flex-direction: column;
+	}
 
 	.coyright_text {
 		font-size: 36px;
 	}
 
-    .social-media-icons a i {
-        font-size: 24px;
+	.social-media-icons a i {
+		font-size: 24px;
 		color: white;
 		border: 1px solid white;
 		border-radius: 50%;
 		padding: 5px;
 		margin: 0 5px;
 		transition: transform 0.3s;
-    }
+	}
 
 	.social-media-icons a i {
 		transform: scale(1.2);
 	}
 
-    .copyright-text {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+	.copyright-text {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 480px) {
-    .book {
-        width: 95%;
-        max-width: 100%;
-    }
+	.book {
+		width: 95%;
+		max-width: 100%;
+	}
 }
